@@ -274,7 +274,8 @@ public class CityConnect {
 	}
 
 	private static void addRouteAtPosition(String newStartLocation,
-			String newEndLocation, String distance, int entryPosition) {
+											String newEndLocation, String distance,
+											int entryPosition) {
 		routes[entryPosition][STORAGE_POSITION_START_LOCATION] = newStartLocation;
 		routes[entryPosition][STORAGE_POSITION_END_LOCATION] = newEndLocation;
 		routes[entryPosition][STORAGE_POSITION_DISTANCE] = distance;
