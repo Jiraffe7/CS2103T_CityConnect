@@ -228,7 +228,7 @@ public class CityConnect {
 			if (existing_start_location == null) { //beginning of empty slots
 				return ROUTE_NOT_FOUND; 
 			} else if (isSameRoute(existing_start_location, existing_end_location,
-					newStartLocation, newEndLocation)) { 
+									newStartLocation, newEndLocation)) { 
 				return i;
 			}
 		}
