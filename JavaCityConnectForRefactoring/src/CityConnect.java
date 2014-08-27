@@ -60,7 +60,7 @@ public class CityConnect {
 	private static final int ROUTE_SLOT_UNAVAILABLE = -1;
 	
 	// This is used to indicate the route was not found in the database
-	private static final int NOT_FOUND = -2;
+	private static final int ROUTE_NOT_FOUND = -2;
 
 	// These are the correct number of parameters for each command
 	private static final int PARAM_SIZE_FOR_ADD_ROUTE = 3;
@@ -200,7 +200,7 @@ public class CityConnect {
 
 		int position = getPositionOfExistingRoute(newStartLocation, newEndLocation);
 
-		if (position == NOT_FOUND) {
+		if (position == ROUTE_NOT_FOUND) {
 			return String.format(MESSAGE_NO_ROUTE, newStartLocation,
 					newEndLocation);
 		} 
@@ -224,13 +224,13 @@ public class CityConnect {
 			String existing_end_location = routes[i][STORAGE_POSITION_END_LOCATION];
 
 			if (existing_start_location == null) { //beginning of empty slots
-				return NOT_FOUND; 
+				return ROUTE_NOT_FOUND; 
 			} else if (isSameRoute(existing_start_location, existing_end_location,
 					newStartLocation, newEndLocation)) { 
 				return i;
 			}
 		}
-		return NOT_FOUND;
+		return ROUTE_NOT_FOUND;
 	}
 
 	/**
