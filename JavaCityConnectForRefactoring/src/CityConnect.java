@@ -270,7 +270,7 @@ public class CityConnect {
 							slotPosition);
 
 		return String.format(MESSAGE_ADDED, newStartLocation, newEndLocation,
-				distance);
+								distance);
 	}
 
 	private static void addRouteAtPosition(String newStartLocation,
