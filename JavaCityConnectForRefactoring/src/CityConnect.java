@@ -6,6 +6,11 @@
  * ====================================================================
  */
 
+/**
+ * I'm just gonna add some text here because I can and I'm testing out the 
+ * branch function of git.
+ */
+
 import java.util.Scanner;
 /**
  * This class is used to store and retrieve the distance between various locations 
