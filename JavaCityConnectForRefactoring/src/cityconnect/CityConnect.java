@@ -1,3 +1,5 @@
+package cityconnect;
+
 /*
  * ==============NOTE TO STUDENTS======================================
  * This class is not written in pure Object-Oriented fashion. That is 

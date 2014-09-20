@@ -1,3 +1,5 @@
+package cityconnect;
+
 
 import static org.junit.Assert.assertEquals;
 
